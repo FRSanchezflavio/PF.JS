@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registro de Salida del Trabajo</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Registro de Salida del Trabajo</h1>
+
+      <form id="salidaForm">
+        <input type="text" id="nombre" placeholder="Nombre" required />
+        <input type="date" id="fecha" required />
+        <input type="time" id="hora" required />
+        <input type="text" id="motivo" placeholder="Ubicación" required />
+        <button type="submit">Registrar Salida</button>
+      </form>
+
+      <h2>Registros</h2>
+      <ul id="listaRegistros"></ul>
+
+      <h2>Estadísticas</h2>
+      <canvas id="graficoSalidas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
